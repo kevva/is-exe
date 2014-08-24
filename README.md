@@ -14,7 +14,7 @@ $ npm install --save is-exe
 var isExe = require('is-exe');
 var read = require('fs').readFileSync;
 
-isExe(read(foo.exe));
+isExe(read('foo.exe'));
 // => true
 ```
 
