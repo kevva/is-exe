@@ -4,26 +4,17 @@
 
 ## Install
 
-```bash
+```sh
 $ npm install --save is-exe
-```
-
-```bash
-$ component install kevva/is-exe
-```
-
-```bash
-$ bower install --save is-exe
 ```
 
 ## Usage
 
 ```js
-var fs = require('fs');
 var isExe = require('is-exe');
-var buf = fs.readFileSync('foo.exe');
+var read = require('fs').readFileSync;
 
-isExe(buf);
+isExe(read(foo.exe));
 // => true
 ```
 
