@@ -2,11 +2,13 @@
 
 > Check if a Buffer/Uint8Array is a EXE file
 
+
 ## Install
 
-```sh
+```
 $ npm install --save is-exe
 ```
+
 
 ## Usage
 
@@ -17,6 +19,7 @@ var read = require('fs').readFileSync;
 isExe(read('foo.exe'));
 //=> true
 ```
+
 
 ## License
 
