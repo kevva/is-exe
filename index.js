@@ -5,5 +5,5 @@ module.exports = function (buf) {
 		return false;
 	}
 
-	return buf[0] === 77 && buf[1] === 90;
+	return buf[0] === 0x4d && buf[1] === 0x5a;
 };
