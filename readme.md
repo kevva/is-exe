@@ -1,4 +1,4 @@
-# is-exe [![Build Status](http://img.shields.io/travis/kevva/is-exe/master.svg?style=flat)](https://travis-ci.org/kevva/is-exe)
+# is-exe [![Build Status](https://travis-ci.org/kevva/is-exe.svg?branch=master)](https://travis-ci.org/kevva/is-exe)
 
 > Check if a Buffer/Uint8Array is a EXE file
 
@@ -6,17 +6,17 @@
 ## Install
 
 ```
-$ npm install --save is-exe
+$ npm install is-exe
 ```
 
 
 ## Usage
 
 ```js
-var isExe = require('is-exe');
-var read = require('fs').readFileSync;
+const fs = require('fs');
+const isExe = require('is-exe');
 
-isExe(read('foo.exe'));
+isExe(fs.readFileSync('foo.exe'));
 //=> true
 ```
 
