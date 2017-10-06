@@ -4,5 +4,5 @@ import test from 'ava';
 import m from '.';
 
 test(t => {
-	t.true(m(fs.readFileSync(path.join(__dirname, 'fixtures/test.exe'))));
+	t.true(m(fs.readFileSync(path.join(__dirname, 'fixture.exe'))));
 });
